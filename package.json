@@ -1,0 +1,17 @@
+{
+  "name": "last.fm",
+  "description": "simple last.fm api for node.js",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ChristopherBiscardi/node-last.fm.git"
+  },
+  "author": "Chris Bellew <atomjack@gmail.com>",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "node": "unknown"
+  }
+}
