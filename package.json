@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ChristopherBiscardi/node-last.fm.git"
+    "url": "git://github.com/atomjack/simple-lastfm.git"
   },
   "author": "Chris Bellew <atomjack@gmail.com>",
   "main": "index.js",
@@ -13,5 +13,8 @@
   },
   "engines": {
     "node": "unknown"
-  }
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {}
 }
