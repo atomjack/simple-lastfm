@@ -33,7 +33,7 @@ lastfm.getSessionKey(function(result) {
 		console.log("Error: " + result.error);
 	}
 });
-
+```
 
 #Documentation
 
