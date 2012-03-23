@@ -38,36 +38,36 @@ lastfm.getSessionKey(function(result) {
 #Documentation
 
 ### init ( options )
-	options must be an object with the following required keys:
-		api_key
-		api_secret
-		username
-		password
-	Optional parameters:
-		session_key
+options must be an object with the following required keys:
+	api_key
+	api_secret
+	username
+	password
+Optional parameters:
+	session_key
 
 I recommend you save the session key and reuse it when possible.
 
 ### getSessionKey ( callback )
-	callback: A function which receives a single object. On success, this object looks like:
-		{
-			success: true,
-			session_key: 'xxx'
-		}
-	On failure:
-		{
-			success: false,
-			error: 'A text description of the error from last.fm'
-		}
-	
-	When a session key is successfully received, it automatically gets saved into the lastfm instance (in the above code, you could access it as lastfm.session_key)
+callback: A function which receives a single object. On success, this object looks like:
+	{
+		success: true,
+		session_key: 'xxx'
+	}
+On failure:
+	{
+		success: false,
+		error: 'A text description of the error from last.fm'
+	}
+
+When a session key is successfully received, it automatically gets saved into the lastfm instance (in the above code, you could access it as lastfm.session_key)
 
 
 ### scrobbleTrack ( options )
-	Required parameters:
-		artist
-		track
-	Optional parameters:
-		callback: A funciton which receives a single object. 
-		timestamp: The timestamp for this scrobble. If omitted, uses the current date/time. Use number of seconds (NOT milliseconds!) since the UNIX epoch.
+Required parameters:
+	artist
+	track
+Optional parameters:
+	callback: A funciton which receives a single object. 
+	timestamp: The timestamp for this scrobble. If omitted, uses the current date/time. Use number of seconds (NOT milliseconds!) since the UNIX epoch.
 
