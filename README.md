@@ -50,24 +50,28 @@ I recommend you save the session key and reuse it when possible.
 
 ### getSessionKey ( callback )
 callback: A function which receives a single object. On success, this object looks like:
+```js
 	{
 		success: true,
 		session_key: 'xxx'
 	}
+```
 On failure:
+```js
 	{
 		success: false,
 		error: 'A text description of the error from last.fm'
 	}
+```
 
 When a session key is successfully received, it automatically gets saved into the lastfm instance (in the above code, you could access it as lastfm.session_key)
 
 
 ### scrobbleTrack ( options )
 Required parameters:
-	artist
-	track
+* `artist`
+* `track`
 Optional parameters:
-	callback: A funciton which receives a single object. 
-	timestamp: The timestamp for this scrobble. If omitted, uses the current date/time. Use number of seconds (NOT milliseconds!) since the UNIX epoch.
+* `callback`: A funciton which receives a single object. 
+* `timestamp`: The timestamp for this scrobble. If omitted, uses the current date/time. Use number of seconds (NOT milliseconds!) since the UNIX epoch.
 
