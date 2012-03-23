@@ -7,14 +7,20 @@
     "url": "git://github.com/atomjack/simple-lastfm.git"
   },
   "author": "Chris Bellew <atomjack@gmail.com>",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },
   "engines": {
     "node": "unknown"
   },
-  "dependencies": {},
+  "dependencies" : {
+    "http-get": "",
+    "crypto": ">=0.0.3",
+    "xml2js": ">=0.1.13",
+    "querystring": ">=0.1.0",
+    "jquery": ">=1.6.3"
+  },
   "devDependencies": {},
   "optionalDependencies": {}
 }
