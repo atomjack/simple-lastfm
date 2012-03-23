@@ -39,12 +39,14 @@ lastfm.getSessionKey(function(result) {
 
 ### init ( options )
 options must be an object with the following required keys:
-	api_key
-	api_secret
-	username
-	password
+
+* `api_key`
+* `api_secret`
+* `username`
+* `password`
+
 Optional parameters:
-	session_key
+* `session_key`
 
 I recommend you save the session key and reuse it when possible.
 
@@ -75,6 +77,7 @@ Required parameters:
 
 * `artist`
 * `track`
+
 Optional parameters:
 
 * `callback`: A function which receives a single object. 
