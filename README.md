@@ -1,10 +1,11 @@
 #Simple-Lastfm
 
-A simple nodejs library to interface with last.fm
+A simple nodejs library to interface with the last.fm API
 
 ## Examples
 
-First, you'll need to get an API key from last.fm: [http://www.last.fm/api/account](http://www.last.fm/api/account)
+First, you'll need to get an API key from last.fm: [http://www.last.fm/api/account](http://www.last.fm/api/account).
+
 Once you have your API key and API secret, you'll need to generate a session key, after which you can then start to scrobble:
 
 ```js
