@@ -30,6 +30,13 @@ lastfm.getSessionKey(function(result) {
 				console.log("in callback, finished: ", result);
 			}
 		});
+		lastfm.loveTrack({
+			artist: 'Electrelane',
+			track: 'Suitcase',
+			callback: function(result) {
+				console.log("in callback, finished: ", result);
+			}
+		});
 	} else {
 		console.log("Error: " + result.error);
 	}
