@@ -46,6 +46,7 @@ options must be an object with the following required keys:
 * `password`
 
 Optional parameters:
+
 * `session_key`
 
 I recommend you save the session key and reuse it when possible.
