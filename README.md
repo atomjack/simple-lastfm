@@ -8,6 +8,8 @@ First, you'll need to get an API key from last.fm: [http://www.last.fm/api/accou
 
 Once you have your API key and API secret, you'll need to generate a session key, after which you can then start to scrobble:
 
+Note:Currently, due to the use of http-get, which doesn't return the HTTP body when the HTTP Return Code is not 200, errors aren't returned. I'm hoping this will be fixed (in http-get) soon.
+
 ```js
 var Lastfm = require('./simple-lastfm/');
 
@@ -90,6 +92,55 @@ Required parameters:
 
 Optional parameters:
 
-* `callback`: A function which receives a single object. 
+* `callback`: A function which receives a single object, of the form { success: true|false[, error: 'text description of the error']}.
 * `timestamp`: The timestamp for this scrobble. If omitted, uses the current date/time. Use number of seconds (NOT milliseconds!) since the UNIX epoch.
+
+## loveTrack (options)
+Required parameters:
+
+* `artist`
+* `track`
+
+Optional parameters:
+
+* `callback`: A function which receives a single object, of the form { success: true|false[, error: 'text description of the error']}.
+
+## getArtistInfo (options)
+Required parameters:
+
+* `artist`
+
+Optional parameters:
+
+* `callback`: A function which receives a single object, of the form { success: true|false[, artistInfo: {}, error: 'text description of the error']}.
+
+## getTrackInfo (options)
+Required parameters:
+
+* `artist`
+* `track`
+
+Optional parameters:
+
+* `callback`: A function which receives a single object, of the form { success: true|false[, trackInfo: {}, error: 'text description of the error']}.
+
+## getTags (options)
+Required parameters:
+
+* `artist`
+
+Optional parameters:
+
+* `track`
+* `callback`: A function which receives a single object, of the form { success: true|false[, tags: {}, error: 'text description of the error']}.
+
+## getPlays (options)
+Required parameters:
+
+* `artist`
+
+Optional parameters:
+
+* `track`: The name of the track. If ommitted, method will return number of artist plays.
+* `callback`: A function which receives a single object, of the form { success: true|false[, plays: #, error: 'text description of the error']}.
 
