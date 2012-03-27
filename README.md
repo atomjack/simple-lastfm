@@ -8,8 +8,6 @@ First, you'll need to get an API key from last.fm: [http://www.last.fm/api/accou
 
 Once you have your API key and API secret, you'll need to generate a session key, after which you can then start to scrobble:
 
-Note:Currently, due to the use of http-get, which doesn't return the HTTP body when the HTTP Return Code is not 200, errors aren't returned. I'm hoping this will be fixed (in http-get) soon.
-
 ```js
 var Lastfm = require('./simple-lastfm/');
 

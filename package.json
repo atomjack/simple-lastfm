@@ -15,7 +15,6 @@
     "node": "*"
   },
   "dependencies" : {
-    "http-get": ">= 0.3.13",
     "crypto": ">= 0.0.3",
     "xml2js": ">= 0.1.13",
     "querystring": ">= 0.1.0",
