@@ -95,7 +95,7 @@ Optional parameters:
 * `callback`: A function which receives a single object, of the form { success: true|false[, error: 'text description of the error']}.
 * `timestamp`: The timestamp for this scrobble. If omitted, uses the current date/time. Use number of seconds (NOT milliseconds!) since the UNIX epoch.
 
-## loveTrack (options)
+### loveTrack (options)
 Required parameters:
 
 * `artist`
@@ -105,7 +105,7 @@ Optional parameters:
 
 * `callback`: A function which receives a single object, of the form { success: true|false[, error: 'text description of the error']}.
 
-## getArtistInfo (options)
+### getArtistInfo (options)
 Required parameters:
 
 * `artist`
@@ -114,7 +114,7 @@ Optional parameters:
 
 * `callback`: A function which receives a single object, of the form { success: true|false[, artistInfo: {}, error: 'text description of the error']}.
 
-## getTrackInfo (options)
+### getTrackInfo (options)
 Required parameters:
 
 * `artist`
@@ -124,7 +124,7 @@ Optional parameters:
 
 * `callback`: A function which receives a single object, of the form { success: true|false[, trackInfo: {}, error: 'text description of the error']}.
 
-## getTags (options)
+### getTags (options)
 Required parameters:
 
 * `artist`
@@ -134,7 +134,7 @@ Optional parameters:
 * `track`
 * `callback`: A function which receives a single object, of the form { success: true|false[, tags: {}, error: 'text description of the error']}.
 
-## getPlays (options)
+### getPlays (options)
 Required parameters:
 
 * `artist`
