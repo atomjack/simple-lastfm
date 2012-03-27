@@ -2,9 +2,6 @@
 
 A simple nodejs library to interface with the last.fm API
 
-## Installation
-    npm install simple-lastfm
-
 ## Examples
 
 First, you'll need to get an API key from last.fm: [http://www.last.fm/api/account](http://www.last.fm/api/account).
@@ -81,6 +78,7 @@ On failure:
 	}
 ```
 
+Note:Right now 
 When a session key is successfully received, it automatically gets saved into the lastfm instance (in the above code, you could access it as lastfm.session_key)
 
 
