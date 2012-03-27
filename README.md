@@ -13,9 +13,7 @@ Note:Currently, due to the use of http-get, which doesn't return the HTTP body w
 ```js
 var Lastfm = require('./simple-lastfm/');
 
-var lastfm = new Lastfm;
-
-lastfm.init({
+var lastfm = new Lastfm({
 	api_key: 'xxx',
 	api_secret: 'xxx',
 	username: 'xxx',
