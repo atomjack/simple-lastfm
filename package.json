@@ -1,5 +1,5 @@
 {
-  "name": "last.fm",
+  "name": "simple-lastfm",
   "description": "simple last.fm api for node.js",
   "version": "1.0.0",
   "repository": {
