@@ -2,6 +2,9 @@
 
 A simple nodejs library to interface with the last.fm API
 
+## Installation
+    npm install simple-lastfm
+
 ## Examples
 
 First, you'll need to get an API key from last.fm: [http://www.last.fm/api/account](http://www.last.fm/api/account).
@@ -9,7 +12,7 @@ First, you'll need to get an API key from last.fm: [http://www.last.fm/api/accou
 Once you have your API key and API secret, you'll need to generate a session key, after which you can then start to scrobble:
 
 ```js
-var Lastfm = require('./simple-lastfm/');
+var Lastfm = require('simple-lastfm');
 
 var lastfm = new Lastfm({
 	api_key: 'xxx',
