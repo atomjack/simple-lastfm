@@ -24,6 +24,13 @@ var lastfm = new Lastfm({
 lastfm.getSessionKey(function(result) {
 	console.log("session key = " + result.session_key);
 	if(result.success) {
+		lastfm.scrobbleNowPlayingTrack({
+			artist: 'Ratatat',
+			track: 'Seventeen Years',
+			callback: function(result) {
+				console.log("in callback, finished: ", result);
+			}
+		});
 		lastfm.scrobbleTrack({
 			artist: 'Bonobo',
 			track: 'Black Sands',
