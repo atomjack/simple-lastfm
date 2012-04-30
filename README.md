@@ -64,8 +64,9 @@ options must be an object with the following required keys:
 Optional parameters:
 
 * `session_key`
+* `debug`
 
-I recommend you save the session key and reuse it when possible.
+I recommend you save the session key and reuse it when possible. Debug should be true or false. By default it is false. Set it to true to have some console commands outputted.
 
 ### getSessionKey ( callback )
 callback: A function which receives a single object. On success, this object looks like:
