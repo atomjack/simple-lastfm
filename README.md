@@ -45,6 +45,13 @@ lastfm.getSessionKey(function(result) {
 				console.log("in callback, finished: ", result);
 			}
 		});
+		lastfm.unloveTrack({
+			artist: 'something crap',
+			track: 'no thanks',
+			callback: function(result) {
+				console.log("in callback, finished: ", result);
+			}
+		});
 	} else {
 		console.log("Error: " + result.error);
 	}
@@ -103,6 +110,16 @@ Optional parameters:
 * `timestamp`: The timestamp for this scrobble. If omitted, uses the current date/time. Use number of seconds (NOT milliseconds!) since the UNIX epoch.
 
 ### loveTrack (options)
+Required parameters:
+
+* `artist`
+* `track`
+
+Optional parameters:
+
+* `callback`: A function which receives a single object, of the form { success: true|false[, error: 'text description of the error']}.
+
+### unloveTrack (options)
 Required parameters:
 
 * `artist`
