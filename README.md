@@ -148,15 +148,17 @@ Optional parameters:
 
 * `callback`: A function which receives a single object, of the form { success: true|false[, artistInfo: {}, error: 'text description of the error']}.
 
-### getTrackInfo (options)
+### getSimilarArtists (options)
 Required parameters:
 
 * `artist`
-* `track`
 
 Optional parameters:
 
-* `callback`: A function which receives a single object, of the form { success: true|false[, trackInfo: {}, error: 'text description of the error']}.
+* `limit`: The number of results to fetch per page. Defaults to 50.
+* `autocorrect`: [0, 1] Transform misspelled artist names into correct artist names, returning the correct version instead. The corrected artist name will be returned in the response.
+* `mbid`: The musicbrainz id for the artist.
+* `callback`: A function which receives a single object, of the form { success: true|false[, tags: {}, error: 'text description of the error']}.
 
 ### getTags (options)
 Required parameters:
@@ -167,6 +169,28 @@ Optional parameters:
 
 * `track`
 * `callback`: A function which receives a single object, of the form { success: true|false[, tags: {}, error: 'text description of the error']}.
+
+### getTopArtists (options)
+Required parameters:
+
+* `user`
+
+Optional parameters:
+
+* `period`: overall | 7day | 1month | 3month | 6month | 12month - The time period over which to retrieve top artists for.
+* `limit`: The number of results to fetch per page. Defaults to 50.
+* `page`: The page number to fetch. Defaults to first page.
+* `callback`: A function which receives a single object, of the form { success: true|false[, tags: {}, error: 'text description of the error']}.
+
+### getTrackInfo (options)
+Required parameters:
+
+* `artist`
+* `track`
+
+Optional parameters:
+
+* `callback`: A function which receives a single object, of the form { success: true|false[, trackInfo: {}, error: 'text description of the error']}.
 
 ### getPlays (options)
 Required parameters:
