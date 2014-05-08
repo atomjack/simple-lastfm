@@ -97,6 +97,16 @@ On failure:
 Note:Right now 
 When a session key is successfully received, it automatically gets saved into the lastfm instance (in the above code, you could access it as lastfm.session_key)
 
+### addTrackTags ( options)
+Require parameters:
+
+* `artist`
+* `track`
+* `tags`: A comma delimited list of user supplied tags to apply to this track. Accepts a maximum of 10 tags.
+
+Optional parameters:
+
+* `callback`: A function which receives a single object, of the form { success: true|false[, error: 'text description of the error']}.
 
 ### scrobbleTrack ( options )
 Required parameters:
