@@ -18,7 +18,8 @@
     "crypto": ">= 0.0.3",
     "xml2js": ">= 0.1.13",
     "querystring": ">= 0.1.0",
-    "jquery": "= 1.8.3"
+    "jquery": "*",
+    "jsdom": "*"
   },
   "devDependencies": {},
   "optionalDependencies": {}

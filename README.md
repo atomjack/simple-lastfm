@@ -18,7 +18,8 @@ var lastfm = new Lastfm({
 	api_key: 'xxx',
 	api_secret: 'xxx',
 	username: 'xxx',
-	password: 'xxx'
+	password: 'xxx',
+	authToken: 'xxx' // Optional, you can use this instead of password, where authToken = md5(username + md5(password))
 });
 
 lastfm.getSessionKey(function(result) {
