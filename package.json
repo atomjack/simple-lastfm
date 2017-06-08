@@ -1,7 +1,7 @@
 {
   "name": "simple-lastfm",
   "description": "simple last.fm api for node.js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "repository": {
     "type": "git",
     "url": "git://github.com/atomjack/simple-lastfm.git"
@@ -12,14 +12,12 @@
     "lib": "lib"
   },
   "engines": {
-    "node": "*"
+    "node": ">= 4.8.3"
   },
-  "dependencies" : {
+  "dependencies": {
     "crypto": ">= 0.0.3",
-    "xml2js": ">= 0.1.13",
-    "querystring": ">= 0.1.0",
-    "jquery": "*",
-    "jsdom": "*"
+    "xml2js": "0.4.17",
+    "querystring": "0.2.0"
   },
   "devDependencies": {},
   "optionalDependencies": {}
