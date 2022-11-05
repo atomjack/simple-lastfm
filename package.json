@@ -1,7 +1,7 @@
 {
   "name": "simple-lastfm",
   "description": "simple last.fm api for node.js",
-  "version": "1.0.6",
+  "version": "1.2.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/atomjack/simple-lastfm.git"
